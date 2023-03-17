@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./iconfont.css">
+	</head>
+	<style type="text/css">
+	*{margin: 0;
+	padding: 0;
+	}
+	html ,body{height: 100%;}
+	 ul li{list-style: none;}
+	.lab{width: 1400px; height:90px; margin-left: 100px; margin: auto; position: relative;}
+	.bd{ height: 70%; width: 100%; margin-bottom: 100px;  }
+	.img{width: 246px; height:90px; margin:0 auto; margin-top: 35px; margin-bottom: 30px;}
+	.produce{width: 1350px;height:590px;margin: auto; position: relative; overflow: hidden;}
+	.Lbox{width: 640px;height: 590px; position: relative;float: left; transform: translate(0,-3000px) ; transition: 1s;  }
+	.Rbox{ transform: translate(0,-3000px); transition: 2s; width: 640px;height: 590px; float: left;background: url(./product-bg.png) ;background-repeat: no-repeat;background-position:0 100px; }
+	.strategy{margin-bottom: 200px; margin: auto; background: url(./home-skill-bg.jpg);height: 690px;background-size: cover; width: 100%; overflow: hidden;  overflow: hidden; }
+	.notice{height: 645.2px; overflow: hidden;width: 1380px;margin: auto;position: relative; overflow: hidden;  }
+	.interlink{height:284.6px; margin-top:30px; padding-top: 50px; overflow: hidden; }
+	.last{height: 385px; background-color: rgb(34,34,34); font-size: 14px;padding-top: 30px; }
+	.fd{height: 100px; width: 1380px; margin: auto; transform: translate(0,-3000px); transition: 2s;}
+	.fd ul{height: 100px; width: 1380px;}
+	.last-l{width: 900px; height: 300px; border-right: rgb(153,153,153) 1px solid;position: relative;float: left; }
+	.last-l-b{position: absolute;bottom: 0;margin-left: 150px; font-size: 15px;color: rgb(153,153,153);}
+	.last-r{float: left; margin-left: 75px; width: 500px; }
+	.code{height: 280px;}
+	.last-r-b{   font-size: 15px;color: rgb(153,153,153);}
+	.sumbox{width: 145px;height: 300px; float: left;margin-top:50px ;list-style: none;}
+	.summary{color: #ddd; font-weight: bold;padding-bottom: 10PX;border-bottom: rgba(250,190,0,.5) 1px solid;display: inline-block;}
+	.sumbox ul li{color:rgb(153,153,153); margin-top: 10px;}
+	
+	.lhead li{ float: left;  list-style: none; width: 100px; height: 90px; color: ; }
+	.lhead a{display: block; margin-top: 20px;font-size: 17px; width: 100px; height: 56.8px; text-align: center; line-height: 56.8px;margin-left: 15px; color: #000000;}
+	.lhead a:hover{border-bottom: #00008B solid 1px ; } 
+	.lab #xl li:hover{display: block;}
+	.fd ul li{animation-name: movee; animation-duration: 2s; float: left;  line-height: 5px; margin-top: 20px;}
+	.icon-weixin{ color: #6495ED;font-size: 35px;}
+	.icon-shoujihaoma{ color: #6495ED;font-size: 35px;}
+	.icon-vertical_line{ color: darkgray;}
+	.icon-sousuo{color: coral;font-size: 30px;}
+	.sbox{width: 65px;height: 30px;margin-right: 10px;background-color: #6674bc;color: aliceblue; float: left;text-align: center; line-height: 30px; border-radius: 15%; margin-top: 50px;}
+	 p{margin:30px 10px; float: left; line-height: 35px;color: cornflowerblue;}
+	 a{text-decoration: none; color:rgb(153,153,153); margin-bottom: 13px;}
+	 .npc{width: 380px; height: 220px;overflow: hidden;}
+	 .notice-im{width: 380px; height: 220px;transition: 0.5s; float: left;margin-right: 30px;animation-name: movee; animation-duration: 2s;}
+	 .notice-im:hover {transform: scale(1.1); }
+	 .npc{ width: 380px; height: 220px;float: left;margin-right: 30px;}
+	 .cb:hover{color: darkblue;}
+	 .ck{display: block; width: 120px; height:40px;border-radius: 5%;  border: #FFA311 1px solid;text-align: center; line-height: 40px; color: #ffa311; font-size: 17px; margin: auto; 
+	 }
+	 
+	 .ck:hover{background-color: #FFA311;color: #F0F8FF; }
+	 .nc ul li:hover{color: cornflowerblue;text-decoration: underline;}
+	 .nc{margin-bottom: 20px;height: 20.8px; }
+	 .nc ul li{ list-style: none; float: left;margin-right: 15px; font-weight: bold; }
+	 .nb{width: 1350px;height: 449px;overflow: hidden; }
+	 .nt{float: left; width: 1300px; margin-top: 20px;}
+	 
+	 .lab ul li:hover .lb {display: block; }
+	 .text{ margin-top: 10px;color: rgb(153,153,153);}
+	 .ss{width: 175px; height: 90px; transition: 1s; overflow: hidden; }
+	 .tz{height: 175px; width: 200px;background-color: black; transition: 2s; visibility: hidden;}
+	 .icon-weixin:hover .tz{ visibility: visible;}
+	 .ss:hover{height: 460px ; display: block;}
+	 .ss li{visibility: hidden; width: 140px; height: 56.8px; background-color: rgb(245,245,245);border-bottom: #A9A9A9 solid 1px ; text-align: center; line-height: 56.8px;}
+	.ss:hover li{ visibility: visible; }
+	.ss ul li:hover {color: cornflowerblue;}
+	.ewm{width: 100px; height: 90px; }
+	.ewm li{visibility: hidden; height: 175px; width: 200px;}
+	.ewm:hover li{visibility: visible;}
+	.fc{ color: aliceblue; line-height: 30px; overflow: hidden; height: 70px; width: 80px; background-color: #FFA311; float: right; margin-bottom: 2px; transition: 0.5s;  transition-property: width; }
+	.fcbox{position:  fixed ; height: 280px; width: 145px; right: 0px; bottom: 25px; overflow: hidden;}
+	.fc:hover{ width: 150px;}
+	.p:hover{border: ivory solid 1px; }
+	.nsb{width: 381.6px; float: left;  margin-right: 40px;}
+
+	.word:hover{border: cornflowerblue solid 1px; color: cornflowerblue; float: left;}
+	 .word{transition: 1s; animation-name: movee; animation-duration: 2s; width: 330px; height: 130px;color: black;  float:left; background-color: rgb(0,105,255,0.1); padding: 30px 25px;margin-right: 30px;margin-bottom: 35px;}
+	</style>
+
+
+
+
+	<body>
+	
+	<div class="fcbox">
+		<a href="#top"> <div class="fc"><img src="./top.png" > <div style="height: 70px;width: 70px; float: right; line-height: 70px; "> 返回顶部</div> </div></a>
+		<a href="https://www.youcash.com/yc-media/pages/web-chat.jsp?channelKey=media_gw&keyCode=2" target="_blank"> <div class="fc"><img src="./service.png" > <div style="height: 70px;width: 70px; float: right; line-height: 70px;"> 联系客服 </div></div></a>
+		<div class="fc"> <img src="./counter.png" > <div style="height: 70px;width: 70px; float: right; line-height: 70px; "> 贷款计算器</div> </div>
+	</div>	
+
+	<div style="height: 90px;">
+		<div class="lab" id="top">
+			<img src="./A74042_1573148955953.png" style="margin:25px 10px; float: left;" />
+			<ul class="lhead" >
+				<li><a>首页</a></li>
+				<li>
+					
+				<div class="ss">
+					<a>产品介绍</a>
+					<ul>
+						
+						<li >循环贷</li>
+						<li >急速贷</li>
+						<li >业主贷</li>
+						<li >加邮贷</li>
+					</ul>
+
+				
+				</li>
+				<li><a>关于我们</a></li>
+				<li>
+					<div class="ss">
+						<a>新闻中心</a>
+						<ul>
+							<li>最新动态</li>
+							<li>信息公告</li>
+							<li>合规专栏</li>
+							<li>行业新闻</li>
+							</ul>
+					</div>
+					
+				
+				</li>
+				<li>
+					<div class="ss">
+					<a>人才招聘</a>
+				<ul>
+				<li>社会招聘</li>
+				<li>校园招聘</li>
+				</li>
+				</ul>
+				</div>
+				<li><a>帮助中心</a></li>
+				
+					<input id="s4" style="display: none; float: left; width: 300px; height: 58px; background-color: aliceblue; border: none; margin-left: 30px; margin-top: 19px; " type="text" name="sous" value="请输入..." /> 
+						
+					<div id="s1" style="line-height: 90px; margin-left: 80px; width: 100px; height: 90px;float: left ; color:#4057AC;">立即申请贷款:
+					
+					</div>
+					
+					<li id="s2" style="width: 40px;">
+					<div class="ewm">
+						<a  class=" iconfont icon-weixin" style="width: 60px; margin-left: 0; border-bottom: none; color: #6495ED;font-size: 35px;"></a>
+						<ul>
+							<li><img src="./A73017_1566546874843.jpg" /> </li>
+							
+							</ul>
+					</div>
+					
+				
+				</li>
+				<li id="s3"  style="width: 40px; margin-right: 65px;">
+					<div class="ewm">
+						<a  class="iconfont icon-shoujihaoma" style="width: 60px; border-bottom: none; color: #6495ED;font-size: 35px; "></a>
+						<ul>
+							<li><img src="./A73017_1566546874843.jpg" /> </li>
+							
+							</ul>
+							</div>
+						
+					<li style="width: 45px;"> <a id="sss" class="sous" style=" margin-left: 0; border-bottom: none; width: 50px;  border-left: lightslategray solid .2px;" > <button class="iconfont icon-sousuo" style=" background-color: rgb(255,255,255);   font-size: 30px; border: none;color: coral;">  </button> </a> </li>
+					
+					<div id="s5" style="height: 120px;"></div>
+			
+				
+				
+			</ul>
+			
+			<ul>
+				
+				
+				
+				
+			</ul>
+		</div>
+	</div>
+		<div class="bd">
+			<img src="./A73507_1570592198333.jpg" alt="" style=" width: 100%; height: 100%; ">
+		</div>
+
+		<div class="img" >
+			<img src="./home-title-product.png" />
+		</div>	
+		<div class="produce" >
+		<div class="Lbox" id="s6" id="move">
+			<img src="./A74011_1615456196400.png " style="position: absolute; top: 135px;" />
+		</div>
+		<div class="Rbox" id="s7" id="move">
+			<div style="width: 490px;height: 320px; margin-left: 70px;  margin-top: 150px; position: relative;" >
+				<div style="width: 500px;height: 50px; margin-bottom: 50px; ">
+				<img src="./A_1623986485978.png" width="50px"height="50px"style="float: left;margin-right: 30px;" />
+				<div style="font-size: 20px;color: #DDDDDD; font-weight: bold;">正规持牌</div>
+				<div style="font-size: 20px;color: #DDDDDD; font-weight: bold;">借还灵活</div>
+				<div style="width: 500px;">
+					<div class="sbox">循环贷</div>
+					<div class="sbox">急速贷</div>
+					<div class="sbox">业主贷</div>
+					<div class="sbox">加邮贷</div>
+				</div>
+				
+				</div>  
+			<div style="position: absolute; bottom: 0; color: aliceblue;">谨慎借贷，理性消费</div>
+			<a href="https://www.youcash.com/jiayoudai/75066.html"><div style="width: 120px; height:40px;border-radius: 5%; background-color: #ffa311; position: absolute; right: 0; bottom: 0;text-align: center; line-height: 40px; color: aliceblue; font-size: 17px;">查看详情</div></a>	 
+			</div>
+			
+		</div>
+		</div>
+		<div class="strategy" >
+				
+			<div class="img"  >
+				<img src="./home-title-skill.png" style="margin-top: 30px;" />
+			</div>
+			<div style="width: 1310px; height: 410px; margin: auto;">
+			<div id="s8"  style="transform: translate(0,-3000px); transition: 1s; height: 500px; margin: auto;">
+				<div style="height: 410px; width: 400px; float: left;margin-right: 20px;">
+		<div id="move" style="width: 380px; height: 220px; float: left ; overflow: hidden; margin-right: 35px;">
+			<img class="notice-im" src="./A74279_1577759202078.jpg" />
+		</div>
+		<div id="move" style="width: 330px; height: 120px; float: left; margin-right: 35px;  background-color: #F0F8FF; padding: 30px 25px;animation-name: movee; animation-duration: 2s;">
+			<div id="move" class="cb">中邮钱包-正规持牌消费金融平台</div>
+			<div id="move" style="color:rgb(153,153,153);margin-top: 20px;">中邮钱包是中邮消费金融的平台，中邮消费金融是经银保监会批准的持牌消费金融，由邮储银行控股。公司简介：中邮消费金融成立于2015年...</div>
+		</div>
+		</div>
+		
+		
+		<div id="s9" style="transform: translate(0,-3000px); transition: 2s; height: 410px;width: 400px;float: left;margin-right: 20px; ">
+		<div id="move" style="width: 380px; height: 220px;float: left; overflow: hidden; margin-right: 35px; position: relative;">
+			<img class="notice-im" src="./A74275_1577758975841.jpg" />
+			<div style="position: absolute; bottom: 0;background-color: rgb(1,1,1,0.3);width: 380px;padding: 10px;color: aliceblue ; animation-name: movee; animation-duration: 2s;">如何选择适合自己的贷款产品？</div>
+		</div>
+		
+		<div class="p" id="move" style="transition: 2s; width: 330px; height: 90px; color: aliceblue; float: left;margin-top: 30px; margin-right: 35px; background-color: rgb(255,255,255,0.1); padding: 30px 25px;animation-name: movee; animation-duration: 2s;">房贷客户专享"业主贷"<br /><br /> 业主贷是中邮消费金融一款高额低息、无需抵押、年利率低至14.04%，专为尚有未结清且正常还款的房贷的... </div>
+		
+		</div>
+		
+		
+		<div id="s10" style="transform: translate(0,-3000px); transition: 2s; height: 410px;width: 400px;float: left; margin-right: 20px;">
+		<div id="move" style="width: 380px; height: 220px;float: left; overflow: hidden; margin-right: 35px;position: relative;">
+			<img id="move" class="notice-im" src="A74273_1577758984531.jpg" />
+			
+			<div id="move" style="position: absolute; bottom: 0;background-color: rgb(1,1,1,0.3);width: 380px;padding: 10px;color: aliceblue; animation-name: movee; animation-duration: 2s;">急速贷款攻略</div>
+			
+		</div>
+			<div class="p" id="move" style=" transition: 2s; width: 330px; height: 90px; color: aliceblue; float: left; margin-top: 30px; margin-right: 35px; background-color: rgb(255,255,255,0.1); padding: 30px 25px;animation-name: movee; animation-duration: 2s;">中邮消费金融怎么样？<br /><br /> 中邮消费金融总部设在广州，是经由中国银行保险监督管理委员会批准成立，由中国邮储银... </div>
+		</div>
+			</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+			</div>
+			<div style="margin-top: 20px;">
+				
+				<a class="ck" href="https://www.youcash.com/daikuangonglue.html">查看更多</a>
+			</div>
+		</div>
+		
+		
+		<div class="notice" id="s8">
+			<div  class="img">
+				<img src="home-title-news.png" />
+			</div>
+			<div class="nc">
+			<ul>
+				<a href="#1"><li>最新动态</li></a>
+				<a href="#2"><li>信息公告</li></a>
+				<a href="#3"><li>合规专栏</li></a>
+				<a href="#4"><li>行业新闻</li></a>
+			</ul>
+			</div>
+				
+				<div class="nb">
+					
+					
+					
+					
+					<!-- 第一页 -->
+						<div class="nsb">
+						<div class="npc" > <img class="notice-im" src="./A75129_1626080819912.jpg" > </div>
+						
+						<div class="word">
+					<div class="head">内外兼修，中邮消费金融助推普惠金融高...</div>
+					<div class="text">随着数字经济和数字金融的蓬勃发展,数字化服务、数字化金融成为消费金融公司在新赛道上...<br /><br />2021-05-21</div>
+				</div>
+						</div>
+					
+				<div class="nsb">		
+						<div class="word" id="1">
+				
+						<div class="head">内外兼修，中邮消费金融助推普惠金融高...</div>
+						<div class="text">消费金融行业经历几年的快速发展，正迎来全新机遇与挑战。2020年来，消费金融行业可谓...<br /><br />2021-05-21</div>
+					</div>
+					<div class="word">
+						<div class="head">五一将至，中邮消费金融 “理性消费指南...</div>
+						<div class="text">五一小长假马上来临，很多小伙伴的旅游、shopping等 “假日计划”已提上日程。面对即...<br /><br />2021-05-21</div>
+					</div>
+				</div>
+				<div style=" width: 381.6px; float: left; ">
+							<div class="word">
+								<div class="head">考后消费是仪式感作祟?中邮消费金融倡...</div>
+								<div class="text">又是一年毕业季开启,伴随着长达三个月暑假的 到来,考生们开启了“放飞模式”,聚会、购物、医美等消费活动,成为部分学生告别高中时 ...<br /><br />2021-05-21</div>
+							</div>
+				<div class="word">
+					<div class="head">深耕自主研发中邮消费金融上线全新核. ...</div>
+					<div class="text">消费金融行业经历几年的快速发展，正迎来全新机遇与挑战。2020年来，消费金融行业可谓...<br /><br />2021-05-21</div>
+				</div>
+				</div>
+				
+				
+				
+				<!-- 第二页// -->
+				<div class="nsb">
+				<div class="npc" id="2">  </div>
+					<div class="word" >
+						<div class="head">吸猫”“兔考”等诈骗频现,中邮消费...</div>
+						<div class="text">近日,小环在网上看到一则“免费领养猫咪”的帖子,喜欢“萌萌哒”猫咪的她一下就动心了 ...<br /><br />2021-05-21</div>
+					</div>
+				</div>	
+				<div class="nsb">
+					<div class="word">
+						<div class="head">中邮消费金融提醒消费者:理性消费,适.</div>
+						<div class="text">近年来,消费金融对消费的促进作用日益显现,并呈现线上化和年轻化趋势,年轻一代更加习 <br /><br />2021-04-30</div>
+					</div>
+					
+				
+				<div class="word">
+					<div class="head">广东银行同业公会发布“2020年广东银</div>
+					<div class="text">新闻发布会现场为深入贯彻习近平总书记重要讲话精神和党中央决策部醫,全面总结2020年广<br /><br />2021-05-21</div>
+				</div>
+				</div>
+				<div class="nsb">
+				<div class="word">
+					<div class="head">关于公司更换金融许可证的公告...</div>
+					<div class="text">根据中国银行保险监督管理委员会令(2021年第3号)要求,《银行保险机构许可证管理办法》...<br /><br />2021-05-21</div>
+				</div>
+				
+				<div class="word">
+					<div class="head">公司2020年度关联交易情况...</div>
+					<div class="text">根据《中邮消费金融有限公司关联交易管理办法(2020年修订版)》有关规定,经公司第七次 ...<br /><br />2021-05-21</div>
+				</div>
+				
+				</div>
+				
+				<!-- 第三页// -->
+				
+				
+				
+				<div class="nsb">
+					<div class="npc" id="3"> <img class="notice-im" src="./A73656_1573148916393.jpg" > </div>
+					<div class="word" >
+						<div class="head">中邮消费金融有限公司2021年校园招聘结...</div>
+						<div class="text">根据人力社会资源保障部《关于国有企业招聘应届高校毕业生信息公开的意见》(人社部发[2014]79号)及中国邮政储蓄银行《关于做 ...<br /><br />2021-05-21</div>
+					</div>
+					</div>
+				
+					
+					
+				<div class="nsb">
+					
+					<div class="word">
+						<div class="head">中邮消费金融有限公司2020年客户投诉 ...</div>
+						<div class="text">2020年公司依照政府部门、监管机构要求,积极开展疫情期间金融纾困工作,切实落实保护金...<br /><br />2021-05-21</div>
+					</div>
+					<div class="word">
+						<div class="head">同业借款与同业拆借方案 ...</div>
+						<div class="text">消费金融行业经历几年的快速发展，正迎来全新机遇与挑战。2020年来，消费金融行业可谓...<br /><br />2021-05-21</div>
+					</div>
+				
+				</div>
+				
+			<div class="nsb">
+				
+				<div class="word">
+					<div class="head">反洗钱科普丨出借个人账户能获得千元报...</div>
+					<div class="text">为支持公司日常经营,星展银行(中国)有限公司(以下简称“星展银行(中国)”)拟给予...<br /><br />2021-05-21</div>
+				</div>
+				<div class="word">
+					<div class="head">普惠金融的内涵是什么?有何特征?...</div>
+					<div class="text">银行卡也能卖钱?出借个银行账户/U盾就能获得上千元报酬?要知道天下没有免费的午餐当 ...<br /><br />2021-05-21</div>
+				</div>
+			
+			</div>		
+				
+				
+				
+				<!-- 第四页// -->
+				
+				
+				
+				
+				
+				
+				<div class="nsb">
+					<div class="npc" > <img class="notice-im" src="./A75039_1621585685144.png" > </div>
+					<div class="word" id="4">
+						<div class="head">反洗钱科普|学会5个小妙招,远离洗钱 ...</div>
+						<div class="text">“洗钱”这件看似很“遥远”的事情,其实很多时候就藏在我们身边。特别是洗钱的步骤变化 ...<br /><br />2021-05-21</div>
+					</div>
+					
+				</div>	
+					
+					
+				<div class="nsb">
+					<div class="word">
+						<div class="head">中邮消费金融坚定落实扫黑除恶专项斗争...</div>
+						<div class="text">随着扫黑除恶专项斗争的不断深入,金融领域内黑恶势力活动的组织形态、攫取利益的方式也在发生改变,这就要求各金融机构把握新理念,依...<br /><br />2021-05-21</div>
+					</div>
+					<div class="word">
+						<div class="head">反洗钱科普|警惕这些常见的洗钱套路! ...</div>
+						<div class="text">认准正规借货平台警惕“套路货”的千层套路 ...<br /><br />2021-05-21</div>
+					</div>
+				</div>
+				
+				
+				<div class="nsb">
+					<div class="word">
+						<div class="head">认准正规借贷平台警惕“套路贷”的干 ...</div>
+						<div class="text">很多人对“洗钱”并不陌生,这个词语经常在电视剧或电影中出现,但也有人对“洗钱”的认 ...<br /><br />2021-05-21</div>
+					</div>
+					<div class="word">
+						<div class="head">央行新规要求所有贷款产品明示年化利率...</div>
+						<div class="text">2021年3月31日,央行官网发布2021年第3号公告提出,为维护贷款市场竟争秩序,保护金融 ...<br /><br />2021-05-21</div>
+					</div>
+				</div>
+				
+				
+			</div>
+				<div style="margin-top: 20px;">
+					
+					<a class="ck" href="https://www.youcash.com/daikuangonglue.html">查看更多</a>
+				</div>
+			</div>
+		</div>
+		<div class="interlink">
+			<div class="img">
+				<img src="home-title-links.png" />
+			</div>
+			<div class="fd" id="s11">
+			<ul  >
+				<li><a href="http://www.psbc.com/cn/index.html" target="_blank"><img src="./A73054_1572938728277.png" style="margin-left: 70px;"/></a></li>
+				<li><a href="https://www.dbs.com.cn/index-sc/default.page" target="_blank"><img src="./A73049_1567229180303.png"/></a></li>
+				<li><a href="http://www.sangem.com/" target="_blank"><img src="./A73051_1567229217188.png"/></a></li>
+				<li><a href="https://www.bohaitrust.com/" target="_blank"><img src="./A73050_1567229200316.png"/></a></li>
+				<li><a href="http://grandbuy.com.cn/" target="_blank"><img src="./A73053_1567229254235.png"/></a></li>
+				<li><a href="http://www.lakala.com/" target="_blank"><img src="./A74008_1573144059762.png"/></a></li>
+				<li><a href="http://www.000861.com/" target="_blank"><img src="./A73048_1567229149320.png"/></a></li>
+			</ul>	
+			</div>
+		</div>
+		<div class="last">
+			<div class="M" style="width: 1500px;height: 300px;margin: auto;">
+			<div class="last-l">
+				<div class="sumbox" style="margin-left: 150px;">
+					<div class="summary">产品介绍</div>
+					
+											
+					
+					<ul>
+						<li><a href="https://www.youcash.com/chanpin.html#rexiaochanpin">热销产品</a></li>
+											<li><a href="https://www.youcash.com/chanpin.html#younigoushangcheng">邮你购商城</a></li>
+											<li><a href="https://www.youcash.com/chanpin.html#daikuanqudao">贷款渠道</a></li>
+											<li><a href="https://www.youcash.com/chanpin.html#yewufanwei">业务范围</a></li>
+					
+					</ul>
+				</div>
+				<div class="sumbox">	
+					<div class="summary">关于我们</div>
+					<li><a>公司介绍</a></li>
+					<li><a>股东构成</a></li>
+					<li><a>荣耀榜</a></li>
+					<li><a>精彩瞬间</a></li>
+					<li><a>联系我们</a></li>
+				</div>	
+				<div class="sumbox">
+					<div class="summary">人才招聘</div>
+					<li><a>社会招聘</a></li>
+					<li><a>校园招聘</a></li>
+				</div>	
+				<div class="sumbox">
+					<div class="summary">帮助中心</div>
+					<li><a>贷款流程</a></li>
+					<li><a>贷款攻略</a></li>
+					<li><a>常见问题</a></li>
+					<li><a>诈骗知识技巧</a></li>
+					<li><a>征信知识</a></li>
+				</div>	
+				<div class="sumbox">
+					<div class="summary">新闻中心</div>
+					<li><a>最新动态</a></li>
+					<li><a>信息公告</a></li>
+					<li><a>合规专栏</a></li>
+					<li><a>行业新闻</a></li>
+				</div>
+			    <div class="last-l-b">
+					<a href="https://www.youcash.com/sitemap.html" target="_blank" style="color: #999; text-decoration: underline;" >网站地图</a>|
+					
+					<a href="https://www.youcash.com/privacy.html" target="_blank" style="color: #999; text-decoration: underline;">隐私政策</a>|	
+					
+					<span>粤ICP备16025673号-1 版权所有© 中邮消费金融有限公司 2015-2021 保留所有权利</span>
+				</div>
+			</div>		
+			<div class="last-r">
+				<div class="code">
+					<div style="float: left; margin-right: 75px;">
+						<img src="./A73018_1615455112240.png"  />
+						<div align="center" style="font-size: 18px; color: #DDDDDD;">APP申请贷款</div>
+					</div>
+					<div style="float: left; ">
+						<img src="./A73017_1566546874843.jpg" />
+					
+						<div align="center"  style="font-size: 18px; color: #DDDDDD;">微信申请贷款</div>
+					</div>
+				</div>
+					<div class="last-r-b">
+						
+						
+						客服投诉热线：40066-95580<br />
+						地址：广州市天河区林和东路281号天伦控股大厦8F-12F
+					
+					
+						</div>		
+			</div>
+		</div>
+		</div>
+		
+		
+	</body>
+	<script>
+		var a=document.getElementById('sss');
+		a.onclick=function(){
+			document.getElementById("s1").style.display="none";
+			document.getElementById("s2").style.display="none";
+			document.getElementById("s3").style.display="none";
+			document.getElementById("s4").style.display="block";
+
+			
+		}
+		var b=document.getElementById('s5');
+		b.onclick=function(){
+
+			document.getElementById("s1").style.display="block";
+			document.getElementById("s2").style.display="block";
+			document.getElementById("s3").style.display="block";
+			document.getElementById("s4").style.display="none";
+		}
+		
+	
+	
+		
+		var t1=window.setInterval( function(){
+			var c= document.getElementById("s6");
+			console.log(window.scrollY)
+			if(window.scrollY>=500&&window.scrollY<=900){
+				c.style.transform="translate(0,0)"
+				
+				console.log('1230');
+			}
+			
+		} ,1000);
+		var t1=window.setInterval( function(){ 
+			var d= document.getElementById("s7");
+			console.log(window.scrollY)
+			if(window.scrollY>=500&&window.scrollY<=900){
+				d.style.transform="translate(0,0)";
+				
+				console.log('1230');
+			}
+			
+		} ,1000);
+	
+		var t1=window.setInterval( function(){
+			var d= document.getElementById("s8");
+			console.log(window.scrollY)
+			if(window.scrollY>=1000&&window.scrollY<=1600){
+				d.style.transform="translate(0,0)";
+				
+				console.log('1230');
+			}
+			
+		} ,1000);
+		
+		var t1=window.setInterval( function(){
+			var d= document.getElementById("s9");
+			console.log(window.scrollY)
+			if(window.scrollY>=1000&&window.scrollY<=1600){
+				d.style.transform="translate(0,0)";
+				
+				console.log('1230');
+			}
+			
+		} ,1000);
+		
+		var t1=window.setInterval( function(){
+			var d= document.getElementById("s10");
+			console.log(window.scrollY)
+			if(window.scrollY>=1000&&window.scrollY<=1600){
+				d.style.transform="translate(0,0)";
+				
+				console.log('1230');
+			}
+			
+		} ,1000);
+		var t1=window.setInterval( function(){
+			var d= document.getElementById("s11");
+			console.log(window.scrollY)
+			if(window.scrollY>=2400&&window.scrollY<=2900){
+				d.style.transform="translate(0,0)";
+				
+				console.log('1230');
+			}
+			
+		} ,1000);
+	
+	</script>
+	
+</html>
+	
